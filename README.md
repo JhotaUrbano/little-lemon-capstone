@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# 🍋 Little Lemon - Table Reservation App  
+**Meta Front-End Developer Capstone Project**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación de reservas para el restaurante ficticio **Little Lemon**, creada como parte del _Capstone Project_ del certificado de **Meta Front-End Developer**.
 
-## Available Scripts
+Incluye un formulario avanzado de reservas, validación con Formik + Yup, navegación con React Router, pruebas unitarias con React Testing Library y un diseño moderno.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Características principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✔ Formulario de reservas totalmente funcional  
+✔ Validación con **Formik** y **Yup**  
+✔ Navegación mediante **React Router DOM v7**  
+✔ Componente de confirmación con redirección automática  
+✔ Tests unitarios incluidos  
+✔ Código limpio y estructurado  
+✔ Diseño responsive y moderno  
+✔ Control de inputs:  
+   - No permite negativos  
+   - No permite valores > 10  
+   - No permite valores vacíos  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📦 Tecnologías utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 19  
+- React Router DOM v7  
+- Formik  
+- Yup  
+- React Testing Library  
+- Jest  
+- CSS puro
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Estructura del proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+little-lemon/
+│── public/
+│── src/
+│ ├── components/
+│ │ ├── Header.js
+│ │ ├── Footer.js
+│ │ ├── BookingPage.js
+│ │ ├── BookingForm.js
+│ │ ├── ConfirmedBooking.js
+│ ├── utils/
+│ │ ├── api.js
+│ ├── App.js
+│ ├── App.test.js
+│ ├── index.js
+│── README.md
+└── package.json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+yaml
+Copiar código
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Instalación y ejecución
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clonar el repositorio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone https://github.com/JhotaUrbano/little-lemon-capstone.git
+cd little-lemon-capstone
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+shell
+Copiar código
 
-## Learn More
+### 2️⃣ Instalar dependencias
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+shell
+Copiar código
 
-### Code Splitting
+### 3️⃣ Instalar dependencias adicionales necesarias
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install react-router-dom formik yup
 
-### Analyzing the Bundle Size
+shell
+Copiar código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4️⃣ Ejecutar el servidor de desarrollo
 
-### Making a Progressive Web App
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+yaml
+Copiar código
 
-### Advanced Configuration
+La app estará disponible en:  
+👉 http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🧪 Ejecutar los tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+El proyecto incluye pruebas unitarias proporcionadas por Meta y pruebas propias.
 
-### `npm run build` fails to minify
+Para ejecutarlas:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm test
+
+yaml
+Copiar código
+
+Si Jest pregunta algo en modo interactivo, puedes pulsar:
+
+- `a` → ejecutar todos los tests  
+- `q` → salir  
+- `f` → ejecutar solo tests fallidos  
+
+---
+
+## 🔧 Solución a errores comunes
+
+### ❗ Error de `react-router-dom` en tests
+Si aparece algo como:
+
+> Cannot find module 'react-router-dom'
+
+Debes instalar:
+
+npm install react-router-dom
+
+yaml
+Copiar código
+
+---
+
+## 📸 Capturas (opcional)
+
+Puedes añadir capturas aquí si quieres:
+
+/screenshots/home.png
+/screenshots/form.png
+/screenshots/confirmation.png
+
+yaml
+Copiar código
+
+---
+
+## 👨‍💻 Autor
+
+**José Urbano**  
+📚 Meta Front-End Developer  
+💼 Full Stack Developer  
+🔗 GitHub: https://github.com/JhotaUrbano  
+
+---
+
+## 📝 Licencia
+
+Este proyecto es únicamente para fines educativos como parte del programa **Meta Front-End Developer**.
